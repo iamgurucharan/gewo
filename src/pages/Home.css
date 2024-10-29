@@ -1,0 +1,126 @@
+/* Home.css */
+
+/* Overall Container */
+.home-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: var(--font-primary);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+  /* Header Styling */
+  .home-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .home-header h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+    color: var(--color-text);
+  }
+  
+  /* Features Section */
+  .features {
+    margin: 2rem 0;
+  }
+  
+  .features h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .feature-item {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-light);
+    flex: 1 1 calc(25% - 2rem); /* Four items in a row */
+    min-width: 220px; /* Ensure minimum width for responsiveness */
+  }
+  
+  .feature-item h3 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Call to Action Section */
+  .cta {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+  }
+  
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background var(--transition-speed), transform var(--transition-speed);
+    box-shadow: var(--shadow-light);
+  }
+  
+  .cta-button:hover {
+    background: var(--color-secondary);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+  
+  /* Footer Styling */
+  .home-footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    background: var(--color-light);
+  }
+  
+  .home-footer p {
+    color: var(--color-text);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feature-list {
+      flex-direction: column; /* Stack features on small screens */
+      align-items: center; /* Center align items */
+    }
+  
+    .feature-item {
+      width: 80%; /* Make feature items take more width on mobile */
+    }
+  }
+  
